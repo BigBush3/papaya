@@ -1,11 +1,12 @@
 <template>
   <!-- Кнопка-триггер модального окна -->
-  <button
+  <button class="btn btn-outline-dark"
     type="button"
     data-bs-toggle="modal"
-    data-bs-target="#exampleModal1"
+    data-bs-target="#exampleModal"
     style="
-      width: 21%;
+      width: 70%;
+      max-width: 428px;
       height: 64px;
       border: 1px solid #1d2024;
       border-radius: 35px;
@@ -19,14 +20,16 @@
         font-size: 24px;
         line-height: 200%;
       "
-    >Log in</p>
+    >
+      Log in
+    </p>
   </button>
 
   <!-- Модальное окно -->
   <div class="modal-xl">
     <div
       class="modal fade"
-      id="exampleModal1"
+      id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -62,8 +65,11 @@
               "
             >
               <form>
-                <div class="mb-3">
-                  <h1 style="margin-left: 24%">Create an account</h1>
+                <div
+                  class="mb-3"
+                  style="display: flex; justify-content: center"
+                >
+                  <h1 style="margin-left: ">Create an account</h1>
                 </div>
 
                 <div class="mb-4">
@@ -117,18 +123,20 @@
                   <div
                     id="emailHelp"
                     class="form-text"
-                    style="
-                      font-size: 16px;
-                      font-family: 'Ubuntu';
-                      font-weight: 300;
-                      line-height: 150%;
-                      font-style: normal;
-                      margin-top: 1%;
-                      margin-left: 11%;
-                    "
+                    style="margin-top: 1%; margin-left: 11%; width: 70%"
                   >
-                    The password must be at least 8 characters long and must
-                    include numbers, uppercase and lowercase letters.
+                    <p
+                      style="
+                        font-size: 16px;
+                       
+                        font-weight: 300;
+                        line-height: 150%;
+                        font-style: normal;
+                      "
+                    >
+                      The password must be at least 8 characters long and must
+                      include numbers, uppercase and lowercase letters.
+                    </p>
                   </div>
                 </div>
                 <div class="form-check" style="margin-left: 12%">
@@ -137,14 +145,14 @@
                     type="checkbox"
                     value=""
                     id="flexCheckDefault"
-                    style="background: #1d2024"
+                    
                   />
                   <label
                     class="form-check-label"
                     for="flexCheckDefault"
-                    style="font-size: 18px; margin-left: 2%"
+                    style="font-size: 16px; margin-left: 2%"
                   >
-                    Default checkbox
+                    Remember me
                   </label>
                 </div>
 
@@ -159,8 +167,12 @@
                       font-size: 29px;
                       margin-left: 11%;
                     "
-                    type="submit"
+                   
                     class="btn btn-primary"
+                    
+                      data-bs-target="#exampleModalToggle3"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
                   >
                     Submit
                   </button>
@@ -274,7 +286,7 @@
                   </svg>
                 </div>
 
-                <div style="margin-top: 9%; margin-left: 27%">
+                <div style="margin-top: 9%; display: flex;justify-content: center;">
                   <div style="font-size: 19px">
                     Already have an account?
                     <link
@@ -289,8 +301,9 @@
                     text-align: center;
                     margin-left: 11%;
                     flex-wrap: wrap;
-                    width:76%;
-
+                    width: 76%;
+                    display: flex;
+                    justify-content: center;
                   "
                 >
                   <p
@@ -317,9 +330,115 @@
       </div>
     </div>
   </div>
-</template>
-<script>
 
-</script>
+
+
+
+
+  <div
+    class="modal fade"
+    id="exampleModalToggle3"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div
+        class="modal-content"
+        style="
+          width: 114%;
+          height: 423.13px;
+          background: #ffffff;
+          box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.2);
+          border-radius: 50px;
+        "
+      >
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            style="margin-right: 10px;margin-top: 1%;"
+          ></button>
+        </div>
+        <div class="modal-body" style="">
+          <div class="container">
+            <div
+              style="
+                margin-left: 1%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <h1>Create an account</h1>
+            </div>
+            <div style="margin-left: 33%">
+              <p
+                style="
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 16px;
+                  line-height: 120%;
+                "
+              >
+                Please select your role:
+              </p>
+            </div>
+            <div class="" style="margin-left: 12%">
+              <div style="">
+                <button
+                  style="
+                     width: 87%;
+                    height: 64px;
+                    background: #ffffff;
+                    border: 1px solid #1d2024;
+                    border-radius: 35px;
+                  "
+                >
+                  <p
+                    style="
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 22px;
+                      line-height: 200%;
+                      margin-top: 2%;
+                    "
+                  >
+                    Client
+                  </p>
+                </button>
+              </div>
+              <div style="margin-top: 3%">
+                <button
+                  style="
+                   width: 87%;
+                    height: 64px;
+                    background: #ffffff;
+                    border: 1px solid #1d2024;
+                    border-radius: 35px;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p  style="
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 22px;
+                      line-height: 200%;
+                      margin-top: 2%;
+                    ">Service Provider</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script></script>
 
 <style></style>

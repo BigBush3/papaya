@@ -5,46 +5,56 @@
       overflow-y: hidden; /*для вертикального*/
       overflow-x: hidden; /*для горизонтального*/
     "
-  >   <div
+  >
+    <div style="margin-left: 42%; object-fit: fill; width: 80%">
+      <img
+        class="img-fluid"
+        style="height: auto; position: fixed; max-width: 160%;"
+        src="./../../../accets/Images/Papaya.png"
+      />
+    </div>
+
+    <div>
+      <div
         style="
-          margin-left: 42%;
-         
-         
+          display: flex;
+          justify-content: center;
+          margin-right: 85%;
+          margin-top: 9%;
         "
       >
-        <img style="height: 100%;  position: fixed;" src="./../../../accets/Images/Papaya.png" />
-      </div>
-  
-    <div>
-      <div style="margin-left: 5%; display: flex;width: 30%; margin-top: 9%;" >
-        <h1
-          style="
-            font-style: normal;
-            font-weight: 500;
-            font-size: 96px;
-            line-height: 110px;
-           
-            
-          "
-        >
-          Papaya
-        </h1>
-        <p
-          style="
-            font-style: normal;
-            font-weight: 500;
-            font-size: 34px;
-            line-height: 110px;
-           
-            color: #1d2024;
-          "
-        >
-          ®
-        </p>
+        <div style="display: flex; width: 30%">
+          <div class="data-title" style="display: flex">
+            <h1
+              class="display-1"
+              style="
+                font-style: normal;
+                font-weight: 500;
+
+                line-height: 110px;
+              "
+            >
+              Papaya
+            </h1>
+            <p
+              style="
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 110px;
+
+                color: #1d2024;
+              "
+            >
+              ®
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div style="width: 15%;margin-left: 4.5%; ">
+      <div style="width: 15%; margin-left: 4.5%">
         <p
+          class=""
           style="
             font-style: normal;
             font-weight: 400;
@@ -60,7 +70,7 @@
           Translation Exchange
         </p>
       </div>
-      <div style="width: 20%; margin-left: 5%; margin-top: 3%">
+      <div style="width: 20%;margin-left: 5%; margin-top: 3%">
         <p
           style="
             font-style: normal;
@@ -80,10 +90,10 @@
       </div>
       <div>
         <div style="margin-left: 5%; margin-top: 3%">
-           <AccountLogin v-if="isActive = true" @onclose = "close()"/>
+          <AccountLogin />
         </div>
         <div style="margin-left: 5%; margin-top: 1%">
-          <RegForm/>
+          <RegForm />
         </div>
         <div></div>
         <footer>
@@ -127,32 +137,32 @@
           </div>
         </footer>
       </div>
-     
     </div>
   </div>
 </template>
 
 <script>
-
-import RegForm from './../../components/Regestration/RegForm.vue';
-import AccountLogin from '../Login/AccountLogin.vue';
+import RegForm from "./../../components/Regestration/RegForm.vue";
+import AccountLogin from "../Login/AccountLogin.vue";
 export default {
-  components:{
-     RegForm,
-     AccountLogin 
-    },data(){return{
-        isActive:false
-    }},
-    methods:{
-        open(){this.isActive = true},
-        close(){this.isActive = false}
-    }
-  }
-  
-  
-  
-
-
+  components: {
+    RegForm,
+    AccountLogin,
+  },
+  data() {
+    return {
+      isActive: false,
+    };
+  },
+  methods: {
+    open() {
+      this.isActive = true;
+    },
+    close() {
+      this.isActive = false;
+    },
+  },
+};
 </script>
 
 <style></style>

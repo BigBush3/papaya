@@ -9,13 +9,14 @@
   >
     <div class="modal-xl">
       <div class="modal-dialog modal-lg">
-        <div
+        <div 
           style="height: 100%; border-radius: 67px; flex-wrap: wrap"
           class="modal-content"
         >
-          <div class="modal-header">
+          <div  class = "modal-header"
+          style="display: flex;">
             <h5
-              style="font-size: 18px; margin-left: 5%; margin-top: 3%    
+              style="font-size: 18px; margin-left: 6%; margin-top: 3%    
             ;  font-style: normal;
               font-weight: 400;
               
@@ -25,12 +26,13 @@
             >
               Back
             </h5>
+            
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Закрыть"
-              style="margin-right: 3%; margin-top: 3%"
+              style=" margin-top:3% ; margin-right: 2%;flex-direction: row-reverse;"
             ></button>
           </div>
           <div style="left: 0" class="modal-body">
@@ -43,11 +45,11 @@
               "
             >
               <form>
-                <div class="mb-3">
-                  <h1 style="margin-left: 32%">Account login</h1>
+                <div class="mb-3" style="display: flex; justify-content: center;">
+                  <h1 >Account login</h1>
                 </div>
                
-                <div style="width: 60%;margin-left: 24%">
+                <div style="width: 60%;margin-left: 17%;display: flex; justify-content: center;">
                     <p style="font-style: normal;font-weight: 500;font-size: 16px;line-height: 120%;color: #B81414;">Incorrect e-mail address or password. Please try again.</p>
                 </div>
                 <div class="mb-4">
@@ -98,22 +100,7 @@
                   
                     placeholder="Please enter password"
                   />
-                  <div
-                    id="emailHelp"
-                    class="form-text"
-                    style="
-                      font-size: 16px;
-                      font-family: 'Ubuntu';
-                      font-weight: 300;
-                      line-height: 150%;
-                      font-style: normal;
-                      margin-top: 1%;
-                      margin-left: 11%;
-                    "
-                  >
-                    The password must be at least 8 characters long and must
-                    include numbers, uppercase and lowercase letters.
-                  </div>
+                  
                 </div>
                 <div style="display: flex">
                   <div class="form-check" style="margin-left: 12%; width: 60%">
@@ -122,12 +109,12 @@
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
-                      style="background: #1d2024"
+                     
                     />
                     <label
                       class="form-check-label"
                       for="flexCheckDefault"
-                      style="font-size: 18px; margin-left: 2%"
+                      style="font-size: 16px; margin-left: 2%"
                     >
                      Remember me
                     </label>
@@ -181,7 +168,7 @@
                     font-size: 18px;
                     display: flex;
                     justify-content: center;
-                    margin-top: 9%;
+                    margin-top: 7%;
                     align-items: center;
                     margin-right: ;
                   "
@@ -283,7 +270,7 @@
                   </svg>
                 </div>
 
-                <div style="margin-top: 9%; margin-left: 27%">
+                <div style="margin-top: 9%;display: flex; justify-content: center;">
                   <div style="font-size: 19px">
                     Already have an account?
                     <link
@@ -345,7 +332,7 @@
             class="btn-close"
             data-bs-dismiss="modal"
             aria-label="Close"
-            style="margin-top: 2%; margin-right: 2%"
+            style="margin-top: 2%; margin-right: 4.5%;display: flex; align-items: end; flex-direction: row-reverse;"
           ></button>
         </div>
         <div class="modal-body">
@@ -359,7 +346,7 @@
           >
             <h1>Password recovery</h1>
           </div>
-          <div style="margin-left: 9%; width: 78%; margin-top: 1%">
+          <div style="margin-left: 12%; width: 78%; margin-top: 1%;display: flex; justify-content: center;">
             <p
               style="
                 font-style: normal;
@@ -405,7 +392,7 @@
               class="btn btn-primary"
               data-bs-target="#exampleModalToggle3"
               data-bs-toggle="modal"
-              
+              data-bs-dismiss="modal"
               style="
                 width: 93%;
                 height: 64px;
@@ -430,8 +417,10 @@
         </div>
       </div>
     </div>
+   
+  </div>
 
-  </div>    <div
+  <div
       
       class="modal fade"
       id="exampleModalToggle3"
@@ -471,7 +460,7 @@
             class="btn-close"
             data-bs-dismiss="modal"
             aria-label="Close"
-            style="margin-right: 3%; margin-top: 1%"
+            style="margin-right: 5%; margin-top: 1%;align-items: flex-end;"
           ></button>
         </div>
         <div class="modal-body" style="">
@@ -509,14 +498,160 @@
               </p>
             </div>
           </div>
+          <button data-bs-target="#exampleModal1"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+          >Последняя модалка
+        
+        </button>
         </div>
       </div>
     </div>
     </div>
 
+
+
+    <div class="modal-xl">
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div
+          style="height: 120%; border-radius: 67px; flex-wrap: wrap"
+          class="modal-content"
+        >
+          <div class="modal-header">
+            <h5
+              style="font-size: 18px; margin-left: 5%; margin-top: 3%"
+              class="modal-title"
+              id="exampleModalLabel"
+            >
+              Back
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+              style="margin-right: 3%; margin-top: 3%"
+            ></button>
+          </div>
+          <div style="left: 0" class="modal-body">
+            <div
+              class="container"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <form>
+                <div class="mb-3">
+                  <h1 style="display: flex; justify-content: center;">Password recovery</h1>
+                </div>
+
+                <div class="mb-4" style="margin-top: 10%;">
+                  <label
+                    style="font-size: 19px; margin-left: 11%"
+                    for="exampleInputPassword1"
+                    class="form-label"
+                    >New password</label
+                  >
+                  <input
+                    style="
+                      width: 77%;
+                      height: 70px;
+                      background: #f1f5f8;
+                      border-radius: 13px;
+                      margin-left: 11%;
+                    "
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Please enter your valid e-mail address"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label
+                    style="
+                      font-family: 'Ubuntu';
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 19px;
+                      line-height: 120%;
+                      margin-left: 11%;
+                    "
+                    for="exampleInputPassword1"
+                    class="form-label"
+                    >Confirm new password</label
+                  >
+
+                  <input
+                    style="
+                      width: 77%;
+                      height: 70px;
+                      border-radius: 13px;
+                      background: #f1f5f8;
+                      margin-left: 11%;
+                    "
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Please confirm new password"
+                  />
+                  <div
+                    id="emailHelp"
+                    class="form-text"
+                    style="
+                      font-size: 16px;
+                      width: 70%;
+                      font-weight: 300;
+                      line-height: 150%;
+                      font-style: normal;
+                      margin-top: 1%;
+                      margin-left: 11%;
+                    "
+                  >
+                    The password must be at least 8 characters long and must
+                    include numbers, uppercase and lowercase letters.
+                  </div>
+                </div>
+
+                <div>
+                  <button
+                    style="
+                      background: #1d2024;
+                      width: 77%;
+                      height: 86px;
+                      border-radius: 48px;
+                      margin-top: 6%;
+                      font-size: 29px;
+                      margin-left: 11%;
+                    "
+                    type="submit"
+                    class="btn btn-primary"
+                  >
+                    Save
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <a
     style="
-      width: 21%;
+     width: 70%;
+     max-width:  428px;;
       height: 64px;
       border: 1px solid #1d2024;
       border-radius: 35px;
