@@ -9,7 +9,7 @@
 <script>
 // import CreateForm from './components/Login/CreateForm.vue';
 // import RegForm from './components/Regestration/RegForm.vue';
- import PageForm from './components/MainPage/PageForm.vue';
+import PageForm from './pages/login/components/MainPage/PageForm.vue';
 // import Recovery from './components/Login/RecoveryForm.vue';
 // import FinalRecovery from './components/Login/FinalRecovery.vue'
 // import RecoveryText from './components/Login/RecoveryText.vue'
