@@ -655,9 +655,9 @@
       height: 64px;
       border: 1px solid #1d2024;
       border-radius: 35px;
-      background: #ffffff;
+      
     "
-    class="btn btn-primary"
+    class="btn btn-outline-dark"
     data-bs-toggle="modal"
     href="#exampleModalToggle"
     role="button"
@@ -669,7 +669,7 @@
         line-height: 200%;
         /* identical to box height, or 48px */
 
-        color: #1d2024;
+        
       "
     >
       Sign in
