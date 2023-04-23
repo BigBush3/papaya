@@ -11,7 +11,7 @@
       height: 64px;
       border: 1px solid #1d2024;
       border-radius: 35px;
-      background: #ffffff;
+     
     "
   >
     <p
@@ -358,7 +358,7 @@
     tabindex="-1"
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
-  
+   
   >
   <Company/>
 

@@ -85,6 +85,7 @@
                       font-size: 22px;
                       line-height: 200%;
                       margin-top: 2%;
+                      color: #1d2024;
                     "
                   >
                     Company

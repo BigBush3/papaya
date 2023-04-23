@@ -64,10 +64,11 @@
             <div class="" style="margin-left: 12%">
               <div style="">
                 <button
+                  class="btn btn-outline-dark"  
                   style="
                     width: 87%;
                     height: 64px;
-                    background: #ffffff;
+                   
                     border: 1px solid #1d2024;
                     border-radius: 35px;
                   "
@@ -87,7 +88,7 @@
               </div>
               <div style="margin-top: 3%">
                 <button
-                  class="btn btn-primary"
+                  class="btn btn-outline-dark"
                   data-bs-target="#exampleModal3"
                   data-bs-toggle="modal"
                   data-bs-dismiss="modal"
@@ -95,7 +96,7 @@
                   style="
                     width: 87%;
                     height: 64px;
-                    background: #ffffff;
+                    
                     border: 1px solid #1d2024;
                     border-radius: 35px;
                     display: flex;
@@ -109,7 +110,7 @@
                       font-size: 22px;
                       line-height: 200%;
                       margin-top: 2%;
-                      color: #1d2024;
+                      
                     "
                   >
                     Service Provider

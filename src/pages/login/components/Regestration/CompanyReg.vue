@@ -1,60 +1,64 @@
 <template>
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div
+      style="width: 120%; height: 100%; border-radius: 67px; flex-wrap: wrap"
       class="modal-content"
-      style="
-        width: 1052px;
-        height: 1189.65px;
-        background: #ffffff;
-        box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.2);
-        border-radius: 50px;
-      "
     >
-      <div style="display: flex">
-        <button class="btn btn-link" style="margin-left: 3%; margin-top: 3%">
-          <p
-            style="
-              font-style: normal;
-              font-weight: 400;
-              font-size: 14px;
-              line-height: 120%;
-              /* identical to box height, or 17px */
-
-              display: flex;
-              align-items: center;
-
-              color: #989fa1;
-            "
-          >
-            Back
-          </p>
-        </button>
+      <div class="modal-header">
+        <h5
+          style="font-size: 18px; margin-left: 5%; margin-top: 3%"
+          class="modal-title"
+          id="exampleModalLabel"
+        >
+          Back
+        </h5>
         <button
           type="button"
           class="btn-close"
           data-bs-dismiss="modal"
-          aria-label="Close"
-          style="margin-left: 86%; margin-top: 3%"
+          aria-label="Закрыть"
+          style="margin-right: 3%; margin-top: 3%"
         ></button>
       </div>
-      <div class="modal-body" style="">
-        <div>
-          <div style="display: flex; justify-content: center">
-            <h1>Company Registration Form</h1>
-          </div>
-          <div style="display: flex; justify-content: center">
-            <p
-              style="
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 120%;
-              "
-            >
-              Please complete the form
-            </p>
-          </div>
-          <div>
+      <div style="left: 0" class="modal-body">
+        <div
+          class="container"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <form>
+            <div class="mb-3" style="display: flex; justify-content: center">
+              <h1
+                style="
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 36px;
+                  line-height: 41px;
+
+                  color: #1d2024;
+                "
+              >
+                Company Registration Form
+              </h1>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <p
+                style="
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 16px;
+                  line-height: 120%;
+                  /* or 19px */
+
+                  display: flex;
+                  align-items: center;
+
+                  color: #38484f;
+                "
+              >
+                Please complete the form
+              </p>
+            </div>
+
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -73,7 +77,7 @@
                   id="collapseOne"
                   class="accordion-collapse collapse show"
                   data-bs-parent="#accordionExample"
-                  style="width: 700px"
+                  style="width: 902px; max-width: 100%; height: 270px"
                 >
                   <div class="accordion-body">
                     <div>
@@ -95,55 +99,94 @@
                         About Company
                       </p>
                     </div>
-                    <div style="display: flex">
+                    <div style="display: flex; margin-top: 3%">
                       <div>
                         <label
-                          for="exampleFormControlTextarea1"
-                          class="form-label"
-                          >Example textarea</label
-                        >
-                        <input
-                          class="form-control"
-                          id="exampleFormControlTextarea1"
-                          placeholder="Please enter your company name"
                           style="
-                            background: #f1f5f8;
-                            border-radius: 10px;
-                            width: 250%;
-                            height: 56px;
+                            font-size: 19px;
+                            margin-left: %;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 120%;
+                            /* identical to box height, or 17px */
+
+                            display: flex;
+                            align-items: center;
+
+                            color: #1d2024;
                           "
+                          for="exampleInputPassword1"
+                          class="form-label"
+                          >Company Name</label
+                        >
+
+                        <input
+                          style="
+                            width: 200%;
+                            height: 56px;
+                            border-radius: 13px;
+                            background: #f1f5f8;
+                          "
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Please enter password"
                         />
                       </div>
-
-                      <div style="margin-left: 42%;margin-top: 4.8%;">
-                       
-                       
-
-
-
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                          style=" background: #f1f5f8;
-                            border-radius: 10px;
-                            width: 190%;
-                            height: 56px;"
-                            
+                      <div style="margin-left: 25%;margin-top: 3%;">
+                        <div
+                          class="dropdown"
+                          style=" "
                         >
-                        
-                          <option selected>Please choose from the list below</option>
-                          <option value="1">One</option>
-                          
-                        </select>
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="
+                              background: #f1f5f8;
+                              border-radius: 10px;
+                              width: 200%;
+                              height: 56px;
+
+                            "
+                          >
+                            <p
+                              style="
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 200%;
+                                /* identical to box height, or 28px */
+
+                                display: flex;
+                                align-items: center;
+
+                                color: #727778;
+                              "
+                            >
+                              Please choose from the list below
+                            </p>
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Действие</a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
+
                     <div
                       style="
                         display: flex;
-
                         justify-content: center;
-
-                        margin-top: 3%;
+                        margin-top: 4%;
                       "
                     >
                       <button
@@ -151,12 +194,23 @@
                           background: #ffffff;
                           border: 1px solid #1d2024;
                           border-radius: 35px;
-                          width: 170px;
-                          height: 44px;
-                          margin-left: 30%;
+                          width: 30%;
                         "
                       >
-                        Save
+                        <p
+                          style="
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 2%;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 200%;
+                            color: #1D2024;;
+                          "
+                        >
+                          Save
+                        </p>
                       </button>
                     </div>
                   </div>
@@ -225,7 +279,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
